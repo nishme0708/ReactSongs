@@ -1,8 +1,19 @@
 import React from 'react';
-
-const App = ()=>{
+import { selectSong } from '../actions';
+import SongList from './SongList';
+import SongDetails  from './SongDetails';
+const App = () => {
     return (
-        <div>App</div>
+        <div className='ui container grid'>
+            <div className='ui row'>
+                <div className='column eight wide'>
+                    <SongList />
+                </div>
+                <div className="column eight wide">
+                    <SongDetails></SongDetails>
+                </div>
+            </div>
+        </div>
     );
 };
 
